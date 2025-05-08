@@ -259,7 +259,7 @@ $currentDate = date('M d Y');
                 return;
             }
 
-            fetch(`https://api.openweathermap.org/data/2.5/weather?q=${input.value}&appid=ca695dcbc66c5fa3d0cb955033fd918f`)
+            fetch(`https://api.openweathermap.org/data/2.5/weather?q=${input.value}&appid=your_app_id`)
                 .then((res) => res.json())
                 .then((data) => {
                     displayWeather(data);
