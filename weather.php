@@ -274,7 +274,7 @@ $currentDate = date('M d Y');
             }
 
             navigator.geolocation.getCurrentPosition((position) => {
-                fetch(`https://api.openweathermap.org/data/2.5/weather?lat=${position.coords.latitude}&lon=${position.coords.longitude}&appid=ca695dcbc66c5fa3d0cb955033fd918f`)
+                fetch(`https://api.openweathermap.org/data/2.5/weather?lat=${position.coords.latitude}&lon=${position.coords.longitude}&appid=your_app_id`)
                     .then((res) => res.json())
                     .then((data) => {
                         displayWeather(data);
